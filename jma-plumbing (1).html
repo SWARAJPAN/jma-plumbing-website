@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO META TAGS ── -->
+<title>JMA Plumbing LLC | Plumber in Port St. Lucie, FL — Open 24/7</title>
+<meta name="description" content="JMA Plumbing LLC serves the Treasure Coast with 24/7 emergency plumbing, water heater installation, drain cleaning, and more. 5-star rated. Call Jose at (772) 370-3156.">
+<meta name="keywords" content="plumber Port St. Lucie, emergency plumber Treasure Coast, water heater installation Stuart FL, drain cleaning Vero Beach, plumber Fort Pierce FL">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="JMA Plumbing LLC — Treasure Coast's Trusted Plumber">
+<meta property="og:description" content="5-star rated plumber serving Port St. Lucie, Stuart, Vero Beach & Fort Pierce. Open 24/7. Call (772) 370-3156.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628; --blue: #1a3a5c;
+    --copper: #c07c3a; --copper-light: #e0a060;
+    --white: #f5f1ea; --light: #e8e0d5;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--white); overflow-x: hidden; }
+
+  /* FLOATING CALL BTN */
+  .float-call {
+    display: none; position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999;
+    background: var(--copper); color: var(--navy);
+    padding: 1rem 1.5rem; font-weight: 600; font-size: 1rem;
+    text-decoration: none; letter-spacing: 0.04em;
+    box-shadow: 0 4px 24px rgba(192,124,58,0.5);
+    animation: pulse 2.5s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 4px 24px rgba(192,124,58,0.5); }
+    50% { box-shadow: 0 4px 40px rgba(192,124,58,0.9); }
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.2rem 4rem;
+    background: rgba(10,22,40,0.93); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(192,124,58,0.2);
+  }
+  .logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.08em; }
+  .logo span { color: var(--copper); }
+  nav ul { display: flex; gap: 2.5rem; list-style: none; }
+  nav a { color: var(--light); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+  nav a:hover { color: var(--copper-light); }
+  .nav-cta { background: var(--copper); color: var(--navy) !important; padding: 0.6rem 1.4rem; font-weight: 500; transition: background 0.2s !important; }
+  .nav-cta:hover { background: var(--copper-light) !important; }
+
+  /* HERO */
+  .hero { min-height: 100vh; display: flex; align-items: center; padding: 8rem 4rem 4rem; position: relative; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=1196&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(0.22); }
+  .hero::before { content: ''; position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse 70% 100% at 0% 50%, rgba(10,22,40,0.92) 0%, transparent 70%); }
+  .hero-content { position: relative; z-index: 2; max-width: 650px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(192,124,58,0.15); border: 1px solid rgba(192,124,58,0.4);
+    padding: 0.4rem 1rem; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--copper-light); margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s ease both;
+  }
+  h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 8vw, 7rem); line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 1.5rem; animation: fadeUp 0.8s 0.15s ease both; }
+  h1 em { color: var(--copper); font-style: normal; display: block; }
+  .hero p { font-size: 1.1rem; font-weight: 300; line-height: 1.7; color: rgba(245,241,234,0.85); max-width: 480px; margin-bottom: 2.5rem; animation: fadeUp 0.8s 0.3s ease both; }
+  .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.8s 0.45s ease both; }
+  .btn-primary { background: var(--copper); color: var(--navy); padding: 1rem 2.2rem; font-weight: 500; font-size: 0.95rem; text-decoration: none; letter-spacing: 0.05em; transition: background 0.2s, transform 0.15s; display: inline-block; }
+  .btn-primary:hover { background: var(--copper-light); transform: translateY(-2px); }
+  .btn-secondary { border: 1px solid rgba(245,241,234,0.3); color: var(--white); padding: 1rem 2.2rem; font-size: 0.95rem; letter-spacing: 0.05em; text-decoration: none; transition: border-color 0.2s, transform 0.15s; display: inline-block; }
+  .btn-secondary:hover { border-color: var(--copper); color: var(--copper-light); transform: translateY(-2px); }
+
+  /* STRIP */
+  .strip { background: var(--copper); padding: 1rem 4rem; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; }
+  .strip-item { display: flex; align-items: center; gap: 0.6rem; color: var(--navy); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+  .strip-item svg { width: 18px; height: 18px; fill: var(--navy); }
+
+  /* SECTIONS */
+  section { padding: 6rem 4rem; }
+  .section-label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); margin-bottom: 1rem; }
+  h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: 0.03em; line-height: 1; margin-bottom: 1.5rem; }
+  .section-sub { color: rgba(245,241,234,0.6); font-weight: 300; line-height: 1.7; max-width: 500px; }
+
+  /* SERVICES */
+  .services { background: #0d1e35; }
+  .services-header { margin-bottom: 4rem; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5px; background: rgba(192,124,58,0.15); }
+  .service-card { background: #0d1e35; padding: 2.5rem 2rem; transition: background 0.2s; }
+  .service-card:hover { background: #122545; }
+  .service-icon { width: 48px; height: 48px; background: rgba(192,124,58,0.12); border: 1px solid rgba(192,124,58,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.4rem; }
+  .service-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+  .service-card p { font-size: 0.9rem; font-weight: 300; color: rgba(245,241,234,0.55); line-height: 1.6; }
+
+  /* WHY US */
+  .why-section { background: var(--navy); }
+  .why { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .why-visual { position: relative; aspect-ratio: 4/5; overflow: hidden; }
+  .why-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.75); }
+  .why-visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,0.7) 0%, transparent 50%); }
+  .stat-box { position: absolute; bottom: 2rem; left: 2rem; z-index: 2; background: var(--copper); color: var(--navy); padding: 1.5rem 2rem; }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; line-height: 1; }
+  .stat-label { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+  .corner-badge { position: absolute; top: 2rem; right: 2rem; z-index: 2; border: 1px solid rgba(192,124,58,0.6); padding: 1rem 1.5rem; background: rgba(10,22,40,0.85); }
+  .corner-badge .num { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--copper-light); }
+  .corner-badge .lbl { font-size: 0.75rem; color: rgba(245,241,234,0.6); letter-spacing: 0.08em; text-transform: uppercase; }
+  .why-features { display: grid; gap: 1.5rem; margin-top: 2rem; }
+  .feature { display: flex; gap: 1.2rem; align-items: flex-start; padding: 1.25rem; border: 1px solid rgba(192,124,58,0.1); transition: border-color 0.2s; }
+  .feature:hover { border-color: rgba(192,124,58,0.35); }
+  .feature-icon { width: 36px; height: 36px; flex-shrink: 0; background: rgba(192,124,58,0.1); display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+  .feature h4 { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.3rem; letter-spacing: 0.04em; }
+  .feature p { font-size: 0.82rem; color: rgba(245,241,234,0.5); line-height: 1.5; }
+
+  /* GALLERY */
+  .gallery { background: #0d1e35; }
+  .gallery-note { display: inline-block; background: rgba(192,124,58,0.12); border: 1px solid rgba(192,124,58,0.3); padding: 0.4rem 1rem; font-size: 0.8rem; color: var(--copper-light); letter-spacing: 0.08em; margin-bottom: 3rem; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+  .gallery-item { overflow: hidden; position: relative; background: #0a1628; }
+  .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
+  .gallery-item img { width: 100%; height: 100%; min-height: 220px; object-fit: cover; transition: transform 0.4s ease, filter 0.4s ease; filter: brightness(0.75); display: block; }
+  .gallery-item:hover img { transform: scale(1.04); filter: brightness(1); }
+  .gallery-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.75rem 1rem; background: linear-gradient(to top, rgba(10,22,40,0.9), transparent); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--copper-light); opacity: 0; transition: opacity 0.3s; }
+  .gallery-item:hover .gallery-label { opacity: 1; }
+
+  /* REVIEWS */
+  .reviews { background: var(--navy); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin-top: 3rem; }
+  .review-card { background: #0d1e35; border: 1px solid rgba(192,124,58,0.12); padding: 2rem; transition: border-color 0.2s; }
+  .review-card:hover { border-color: rgba(192,124,58,0.35); }
+  .review-stars { color: var(--copper); font-size: 0.9rem; margin-bottom: 1rem; }
+  .review-text { font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: rgba(245,241,234,0.75); margin-bottom: 1.25rem; font-style: italic; }
+  .reviewer { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--copper-light); }
+  .google-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 3rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.6rem 1.2rem; font-size: 0.8rem; color: rgba(245,241,234,0.5); }
+
+  /* SERVICE AREA */
+  .area { background: #0d1e35; }
+  .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+  .area-map { aspect-ratio: 4/3; overflow: hidden; border: 1px solid rgba(192,124,58,0.2); }
+  .area-map iframe { width: 100%; height: 100%; border: none; }
+  .area-cities { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.5rem; }
+  .city-tag { display: flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1rem; background: rgba(192,124,58,0.06); border: 1px solid rgba(192,124,58,0.15); font-size: 0.85rem; color: rgba(245,241,234,0.75); transition: border-color 0.2s, color 0.2s; }
+  .city-tag:hover { border-color: var(--copper); color: var(--white); }
+  .city-dot { width: 6px; height: 6px; background: var(--copper); border-radius: 50%; flex-shrink: 0; }
+
+  /* CONTACT */
+  .contact { background: var(--navy); display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+  .contact-info { display: grid; gap: 1rem; margin-top: 2rem; }
+  .contact-item { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.5rem; background: rgba(26,58,92,0.3); border-left: 2px solid var(--copper); }
+  .contact-item a { color: var(--white); text-decoration: none; font-size: 1rem; }
+  .contact-item a:hover { color: var(--copper-light); }
+  .contact-icon { font-size: 1.2rem; width: 28px; text-align: center; flex-shrink: 0; }
+  .contact-form { background: #0d1e35; padding: 2.5rem; }
+  .contact-form h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.05em; margin-bottom: 1.5rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+  label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,241,234,0.5); }
+  input, textarea, select { background: rgba(10,22,40,0.6); border: 1px solid rgba(192,124,58,0.2); color: var(--white); padding: 0.8rem 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; transition: border-color 0.2s; width: 100%; }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: var(--copper); }
+  textarea { resize: vertical; min-height: 100px; }
+  select option { background: #0d1e35; }
+  .btn-submit { width: 100%; background: var(--copper); color: var(--navy); border: none; padding: 1rem; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+  .btn-submit:hover { background: var(--copper-light); }
+  .form-note { font-size: 0.75rem; color: rgba(245,241,234,0.35); margin-top: 0.75rem; text-align: center; }
+
+  /* FOOTER */
+  footer { background: #060f1a; padding: 2rem 4rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(192,124,58,0.15); }
+  footer p { font-size: 0.8rem; color: rgba(245,241,234,0.35); }
+  footer a { color: var(--copper); text-decoration: none; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .float-call { display: block; }
+    nav { padding: 1rem 1.5rem; }
+    nav ul { display: none; }
+    section { padding: 4rem 1.5rem; }
+    .hero { padding: 6rem 1.5rem 4rem; }
+    .why, .contact, .area-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .why-visual { aspect-ratio: 3/2; }
+    .form-row { grid-template-columns: 1fr; }
+    .strip { gap: 1.5rem; padding: 1rem 1.5rem; }
+    footer { padding: 1.5rem; flex-direction: column; text-align: center; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
+    .area-cities { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:+17723703156" class="float-call">📞 Call Now — 24/7</a>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">JMA <span>Plumbing</span></div>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:+17723703156" class="nav-cta">📞 Call Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span>★★★★★</span> 5.0 Rating · 40 Google Reviews</div>
+    <h1>Treasure Coast's<em>Trusted Plumber</em></h1>
+    <p>From emergency repairs to full installations — Jose and the JMA team deliver honest, professional plumbing with same-day service and transparent pricing.</p>
+    <div class="hero-ctas">
+      <a href="tel:+17723703156" class="btn-primary">📞 (772) 370-3156</a>
+      <a href="#contact" class="btn-secondary">Request a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>Open 24 Hours</div>
+  <div class="strip-item"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>Same-Day Available</div>
+  <div class="strip-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Licensed & Insured</div>
+  <div class="strip-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Treasure Coast, FL</div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header">
+    <p class="section-label">What We Do</p>
+    <h2>Full-Service Plumbing</h2>
+    <p class="section-sub">Residential and commercial plumbing done right — the first time. No upsells, no surprises.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">🔧</div><h3>Emergency Repairs</h3><p>Burst pipes, leaks, clogs — we respond fast, 24/7, because plumbing problems don't wait.</p></div>
+    <div class="service-card"><div class="service-icon">🚿</div><h3>Water Heater Service</h3><p>Tank and tankless installation, repair, and replacement. Keep your hot water flowing.</p></div>
+    <div class="service-card"><div class="service-icon">🚽</div><h3>Toilet & Fixture Install</h3><p>New toilet, sink, or shower fixtures — professionally installed and leak-tested.</p></div>
+    <div class="service-card"><div class="service-icon">🪣</div><h3>Drain Cleaning</h3><p>Stubborn clogs cleared quickly with the right tools — no guesswork, no damage.</p></div>
+    <div class="service-card"><div class="service-icon">🏠</div><h3>Remodeling Plumbing</h3><p>Kitchen and bathroom remodels handled from rough-in to final trim. Clean work guaranteed.</p></div>
+    <div class="service-card"><div class="service-icon">🔍</div><h3>Inspection & Diagnosis</h3><p>Not sure what's wrong? Jose will find the problem, explain it clearly, and give you honest options.</p></div>
+  </div>
+</section>
+
+<!-- WHY JMA -->
+<section class="why-section" id="about">
+  <div class="why">
+    <div class="why-visual">
+      <img class="why-img" src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional plumber at work">
+      <div class="corner-badge"><div class="num">40+</div><div class="lbl">5-Star Reviews</div></div>
+      <div class="stat-box"><div class="stat-num">24/7</div><div class="stat-label">Emergency Service</div></div>
+    </div>
+    <div>
+      <p class="section-label">Why JMA</p>
+      <h2>Plumbing Done With Pride</h2>
+      <p class="section-sub">Owner Jose brings expertise, honesty, and genuine care for every customer — whether it's a quick fix or a full installation.</p>
+      <div class="why-features">
+        <div class="feature"><div class="feature-icon">⏰</div><div><h4>Shows Up On Time</h4><p>We arrive when we say we will. Your time is valuable and we respect that.</p></div></div>
+        <div class="feature"><div class="feature-icon">💬</div><div><h4>Clear Communication</h4><p>Jose explains exactly what's wrong and what it costs before any work begins.</p></div></div>
+        <div class="feature"><div class="feature-icon">✨</div><div><h4>Clean Workmanship</h4><p>We clean up after every job. You won't know we were there — except the problem is fixed.</p></div></div>
+        <div class="feature"><div class="feature-icon">📞</div><div><h4>Always Reachable</h4><p>24-hour availability because plumbing emergencies don't follow business hours.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <p class="section-label">Our Work</p>
+  <h2>Jobs Done Right</h2>
+  <div class="gallery-note">📸 Placeholder photos — replaced with JMA's real job photos on launch</div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1664298589198-b15ff5382648?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plumbing repair">
+      <div class="gallery-label">Emergency Repair</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Water heater">
+      <div class="gallery-label">Water Heater Install</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1663013675008-bd5a7898ac4f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bathroom fixture">
+      <div class="gallery-label">Bathroom Fixture</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1664301135901-383935f2104f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pipe work">
+      <div class="gallery-label">Pipe Work</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1723759369844-236650d37020?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kitchen sink">
+      <div class="gallery-label">Kitchen Plumbing</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <p class="section-label">Google Reviews</p>
+  <h2>What Customers Say</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jose came out and diagnosed my issue right away and explained it all to me. He showed up when he said he would and was very friendly. I'm so glad my friend recommended JMA Plumbing!"</p>
+      <div class="reviewer">Eric T. — Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jose did it again! Changed out our water heater tank for a tankless unit on a Saturday. Thank you for caring and putting in the work for our family. We appreciate you!"</p>
+      <div class="reviewer">Beth D. — Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Extremely professional and even cleaned up after he was done. The work is solid and looks great. He installed a sink, shower fixtures, and a new toilet — all after a bad water leak."</p>
+      <div class="reviewer">Crystal B. — Google Review</div>
+    </div>
+  </div>
+  <div class="google-badge">⭐ See all 40 reviews on Google Maps</div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area">
+  <p class="section-label">Where We Work</p>
+  <h2>Serving the Treasure Coast</h2>
+  <div class="area-grid">
+    <div class="area-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d220000!2d-80.35!3d27.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div>
+      <p class="section-sub">JMA Plumbing proudly serves homeowners and businesses across the entire Treasure Coast region of Florida.</p>
+      <div class="area-cities">
+        <div class="city-tag"><span class="city-dot"></span>Port St. Lucie</div>
+        <div class="city-tag"><span class="city-dot"></span>Stuart</div>
+        <div class="city-tag"><span class="city-dot"></span>Fort Pierce</div>
+        <div class="city-tag"><span class="city-dot"></span>Vero Beach</div>
+        <div class="city-tag"><span class="city-dot"></span>Jensen Beach</div>
+        <div class="city-tag"><span class="city-dot"></span>Palm City</div>
+        <div class="city-tag"><span class="city-dot"></span>Hobe Sound</div>
+        <div class="city-tag"><span class="city-dot"></span>Sebastian</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div>
+    <p class="section-label">Get In Touch</p>
+    <h2>Let's Fix It Today</h2>
+    <p class="section-sub">Call anytime or fill out the form and we'll get back to you fast.</p>
+    <div class="contact-info">
+      <div class="contact-item"><span class="contact-icon">📞</span><a href="tel:+17723703156">(772) 370-3156</a></div>
+      <div class="contact-item"><span class="contact-icon">💬</span><a href="https://wa.me/17723703156" target="_blank">WhatsApp / Text Us</a></div>
+      <div class="contact-item"><span class="contact-icon">🕐</span><span>Open 24 Hours — 7 Days a Week</span></div>
+      <div class="contact-item"><span class="contact-icon">📍</span><span>Treasure Coast, Florida</span></div>
+    </div>
+  </div>
+  <div>
+    <div class="contact-form">
+      <h3>Request a Free Quote</h3>
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" placeholder="John"></div>
+        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+      </div>
+      <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(772) 000-0000"></div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="">Select a service…</option>
+          <option>Emergency Repair</option>
+          <option>Water Heater</option>
+          <option>Toilet / Fixture Install</option>
+          <option>Drain Cleaning</option>
+          <option>Remodeling</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Describe the issue…"></textarea></div>
+      <button class="btn-submit">Send Request →</button>
+      <p class="form-note">We typically respond within 1 hour.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 JMA Plumbing LLC — Treasure Coast, Florida</p>
+  <p>Licensed & Insured · <a href="tel:+17723703156">(772) 370-3156</a></p>
+</footer>
+
+<!-- LOCAL BUSINESS SCHEMA — SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "JMA Plumbing LLC",
+  "telephone": "+1-772-370-3156",
+  "url": "https://jmaplumbingfl.com",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "priceRange": "$$",
+  "areaServed": ["Port St. Lucie","Stuart","Fort Pierce","Vero Beach","Jensen Beach","Palm City","Hobe Sound","Sebastian"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "40"
+  }
+}
+</script>
+
+</body>
+</html>
